@@ -1,0 +1,25 @@
+CPSC 457
+ASSIGNMENT 1
+PART B
+
+Answer 1
+C was invented as a simple language for system development and was not intended for application development that much. Also C is more bare bone than most of the other languages, and it is easier to follow its assembly representation, which is often easy to predict and track. But the reason C is used over assembly languages is because of maintainability issues, readability and efficiency and many other reasons. Systems written in higher-level languages is often found to be slower and less efficient and also much more complex. There are also some bootstrap issues, for example, most of the features that make high-level languages easier are based on abstractions that kernel must provide itself. How would one write a memory manager in a language which requires a memory manager in the first place? I think it is better to write an operating system in lower-level language because they are much more readable. Also it is extremely useful for example, to be able to assign a variable to a specific memory location.
+
+Answer 2
+The originator of Linux is a Finnish man named Linus Torvalds and he was only 21 at the time. Linux was announced on October 5, 199. He developed it to offer a new free operating system kernel. The Linux Foundation was founded in 2000. The Linux Foundation is a non-profit technology trade association dedicated and chartered to promote, protect and Linux and collaborate development.
+
+Answer 3
+The st_size gives the size of the file in bytes and the size of a symbolic link is the length of the pathname it contains, without a terminating null byte. The st_blocks field indicates the number of blocks allocated to the file, 512-byte units.  (This may be smaller than st_size/512 when the file has holes.) 
+It is not possible to calculate one from the other in this case. The three timespec fields are: 
+            st_atim : Time of last access.
+            st_mtim : Time of last modification.
+            st_ctim : Time of last status change. 
+These commands allows us to change access times: execve(), mknod(), pipe(), utime(), read(). These commands allows us to change modification times: mknod(), truncate(), utime(), write(). 
+
+
+Answer 4
+I/O devices is usually privileged because a user could potentially wipe everything off the hard disk or corrupt its system if not protected.
+
+Answer 5.
+System calls are very costly in terms of efficiency so even though these does not affect the logic or the functionality of the program it can affect the running time of the application very drastically. So it is important for programmer to know which libraries result in system calls especially if it is a large program.
+
